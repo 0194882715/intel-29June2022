@@ -27,6 +27,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: $IMAGENM
-          images: $IMAGENM
+          tags: ${{ env.IMAGENM }}
+          images: ${{ env.IMAGENM }}
 
