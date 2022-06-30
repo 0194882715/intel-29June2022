@@ -5,7 +5,7 @@ on:
     - master
   workflow_dispatch:
 env: 
-  IMAGENM: "rachelleecp/httpapp:$GITHUB_RUN_NUMBER"
+  IMAGENM: "rachelleecp/httpapp:v2"
 jobs:
   build:
     runs-on: ubuntu-latest
