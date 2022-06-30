@@ -25,6 +25,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: "rachelleecp/httpapp:v1"
-          images: "rachelleecp/httpapp:v1"
+          tags: "rachelleecp/httpapp:$GITHUB_RUN_NUMBER"
+          images: "rachelleecp/httpapp:$GITHUB_RUN_NUMBER"
 
