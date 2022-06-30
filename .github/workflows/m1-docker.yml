@@ -22,9 +22,11 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and Push
+        env: 
+          IMAGENM: "rachelleecp/httpapp:$GITHUB_RUN_NUMBER"
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: "rachelleecp/httpapp:$GITHUB_RUN_NUMBER"
-          images: "rachelleecp/httpapp:$GITHUB_RUN_NUMBER"
+          tags: $IMAGENM
+          images: $IMAGENM
 
