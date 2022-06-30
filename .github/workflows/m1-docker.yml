@@ -25,5 +25,5 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: rachel/httpapp:latest
+          tags: rachel/httpapp:v1
 
